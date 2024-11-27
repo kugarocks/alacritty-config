@@ -2,6 +2,9 @@
 # https://gist.github.com/nightgrey/2ed92d362077843502e3dce639aae9c7
 # alacritty 0.14.0 (22a4475)
 
+[env]
+TERM = "xterm-256color"
+
 [general]
 
 # Import additional configuration files.
@@ -21,7 +24,8 @@
 # Schema: `["<string>",]`
 
 import = [
-    "~/.config/alacritty/themes/themes/hyper.toml"
+    #"~/.config/alacritty/themes/themes/hyper.toml"
+    "~/.config/alacritty/themes/themes/coolnight.toml"
 ]
 
 # Directory the shell is started in. When this is unset, or "None", the working directory of the parent process will be used.
@@ -133,6 +137,10 @@ resize_increments = false
 
 option_as_alt = "None" # (macos only)
 
+# Remove Top Bar
+
+decorations = "Buttonless"
+
 [scrolling]
 
 # This section documents the [scrolling] table of the configuration file.
@@ -162,7 +170,7 @@ multiplier = 3
 #
 # Schema: `{ family = "<string>", style = "<string>" }`
 
-normal = { family = "JetBrains Mono", style = "Regular" }
+normal = { family = "MesloLGS NF", style = "Regular" }
 
 # If the family is not specified, it will fall back to the value specified for the normal font.
 # Default: { style = "Bold" }
